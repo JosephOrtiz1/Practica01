@@ -1,17 +1,22 @@
 package com.practica01.Domain;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import java.io.Serializable;
+
+import lombok.Data;
 
 /**
  *
  * @author Alonso Muñoz Aguilar
  */
-public class Arbol {
-
+@Data
+@Entity
+@Table(name="arbolSA")
+public class Arbol implements Serializable{
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_arbol")
     private Long id_arbol;
     private String nombre_comun;
     private String nombre_cientifico;
@@ -20,15 +25,7 @@ public class Arbol {
     private String tipo_flor;
     private String ruta_imagen;
 
-    public Arbol(Long id_arbol, String nombre_comun, String nombre_cientifico, String dureza_madera, String descripcion, String tipo_flor, String ruta_imagen) {
-        this.id_arbol = id_arbol;
-        this.nombre_comun = nombre_comun;
-        this.nombre_cientifico = nombre_cientifico;
-        this.dureza_madera = dureza_madera;
-        this.descripcion = descripcion;
-        this.tipo_flor = tipo_flor;
-        this.ruta_imagen = ruta_imagen;
-    }
+   
 
     public Long getId_arbol() {
         return id_arbol;

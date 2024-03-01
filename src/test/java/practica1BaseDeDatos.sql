@@ -2,7 +2,7 @@ drop schema if exists arbolesSA;
 drop user if exists usuario_practica;
 CREATE SCHEMA arbolesSA ;
 
-create user 'usuario_practica'@'%' identified by 'la_Clave.';
+create user 'usuario_practica'@'%' identified by 'la_Clave';
 
 grant all privileges on arbolesSA.* to 'usuario_practica'@'%';
 flush privileges;
