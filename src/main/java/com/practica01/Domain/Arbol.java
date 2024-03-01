@@ -27,61 +27,6 @@ public class Arbol implements Serializable{
 
    
 
-    public Long getId_arbol() {
-        return id_arbol;
-    }
-
-    public String getNombre_comun() {
-        return nombre_comun;
-    }
-
-    public String getNombre_cientifico() {
-        return nombre_cientifico;
-    }
-
-    public String getDureza_madera() {
-        return dureza_madera;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public String getTipo_flor() {
-        return tipo_flor;
-    }
-
-    public String getRuta_imagen() {
-        return ruta_imagen;
-    }
-
-    public void setId_arbol(Long id_arbol) {
-        this.id_arbol = id_arbol;
-    }
-
-    public void setNombre_comun(String nombre_comun) {
-        this.nombre_comun = nombre_comun;
-    }
-
-    public void setNombre_cientifico(String nombre_cientifico) {
-        this.nombre_cientifico = nombre_cientifico;
-    }
-
-    public void setDureza_madera(String dureza_madera) {
-        this.dureza_madera = dureza_madera;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public void setTipo_flor(String tipo_flor) {
-        this.tipo_flor = tipo_flor;
-    }
-
-    public void setRuta_imagen(String ruta_imagen) {
-        this.ruta_imagen = ruta_imagen;
-    }
     
     
 }

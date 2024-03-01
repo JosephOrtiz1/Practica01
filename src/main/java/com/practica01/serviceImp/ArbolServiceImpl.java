@@ -35,7 +35,7 @@ public class ArbolServiceImpl implements ArbolService{
      @Transactional(readOnly = true)
     public Arbol getArbol(Arbol arbol) {
         
-        return arbolDao.findById(arbol.getIdArbol()).orElse(null);
+        return arbolDao.findById(arbol.getId_arbol()).orElse(null);
         
     }
 
