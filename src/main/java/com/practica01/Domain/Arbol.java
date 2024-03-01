@@ -11,7 +11,7 @@ import lombok.Data;
  */
 @Data
 @Entity
-@Table(name="arbolSA")
+@Table(name="arbol")
 public class Arbol implements Serializable{
     private static final long serialVersionUID = 1L;
     @Id

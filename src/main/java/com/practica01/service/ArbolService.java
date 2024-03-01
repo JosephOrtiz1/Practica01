@@ -14,7 +14,7 @@ import java.util.List;
  */
 public interface ArbolService {
     //recupera registros de la tabla arbol en una lista}
-    public List<Arbol> getArbols(Boolean activos);
+    public List<Arbol> getArbol();
     
     public Arbol getArbol(Arbol arbol);
     

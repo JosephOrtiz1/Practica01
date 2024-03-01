@@ -5,10 +5,13 @@
     <head th:replace="~{layout/plantilla :: head}" >
         <title>asd</title>
         <meta charset="UTF-8"/>
-        
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header th:replace="~{layout/plantilla :: header}" ></header>
+        <section th:replace="~{arbol/fragmentos :: botonesAgregar}" ></section>
+       <section th:replace="~{arbol/fragmentos :: listadoArbol}" ></section>
+       <section th:replace="~{arbol/fragmentos :: agregarArbol}" ></section>
         <footer th:replace="~{layout/plantilla :: footer}" ></footer>
     </body>
 </html>
